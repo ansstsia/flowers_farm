@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Lighthaus';
+    src: url(../fonts/Lighthaus.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    background: #F8F8F6;  
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 160px;
+    row-gap: 30px;
+}
+.i404 {
+    display: flex;
+}
+.i404 h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lighthaus';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 400px;
+    line-height: 350px;
+    color: #1B4F30;
+}
+.main p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+.button {
+    background-color: #1B4F30;
+    width: 500px;
+    height: 100px;
+    border-radius: 60px;
+    border: none;
+}
+.button a {
+    color: white;
+    font-family: 'Lighthaus';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none;
+}
+@media (max-width: 380px) {
+.i404 h1 {
+    font-size: 110px;
+    line-height: 100px;
+}
+.i404 img {
+    width: 100px;
+    height: 100px;
+}
+.main p {
+   
+    font-size: 20px;
+    
+}
+.button {
+    width: 278px;
+    height: 56px; 
+}  
+.button a {
+    font-size: 17px; 
+}
+}
+@media (min-width:380px) and (max-width: 786px) {
+    .i404 h1 {
+        font-size: 200px;
+        line-height: 190px;
+    }
+    .i404 img {
+        width: 200px;
+        height: 200px;
+    }
+    .main p {
+       
+        font-size: 30px;
+        
+    }
+    .button {
+        width: 378px;
+        height: 56px; 
+    }  
+    .button a {
+        font-size: 17px; 
+    }
+}

@@ -1,0 +1,390 @@
+@media (max-width: 380px) {
+    br {
+        display: none;
+    }
+    .wrapper {
+        max-width: 301px; 
+    }
+    .header__list {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    .header__list li a {
+        font-size: 20px;
+        color: #F8F8F6;
+    }
+    .header__list li a img {
+        display: none;
+    }
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top:4%;
+        right: 10%;
+        z-index:2;
+        overflow: hidden;
+        display: block;
+    }
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #F8F8F6;
+        transition: all 0.5s;
+    }
+    .header__nav {
+    transform: translateX(-100%);
+	transition: transform 0.5s; 
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	padding: 15px;
+   background: rgba(27,79,48, 0.8);
+    }
+    .header__nav.active {
+        transform: translateX(0%);
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+    .menu-btn.active span:nth-of-type(1) {
+        display: none;
+      }
+      .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);  
+      }
+      .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg); 
+      }
+    .intro {
+        padding-top: 66px;
+        padding-bottom:74px;
+        background-size: cover;
+        background-position: right;
+    }
+    .intro .wrapper h1 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 35px;
+        padding-top: 20px;
+    }
+    .about {
+        padding-top: 40px;  
+    }
+    .about__info {
+        align-items: center;
+        row-gap: 15px;
+    }
+    .about__info h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .about__info h1 br {
+        display: block;
+    }
+    .about__info p {
+        font-size: 11px;   
+        text-align: center;
+    }
+    .button {
+        width: 278px;
+        height: 56px;  
+    }
+    .button a {
+        font-size: 17px; 
+    }
+    .about .wrapper img {
+       display: none;
+    }
+    .why {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .cards div {
+        row-gap: 5px;
+        font-size: 15px;
+    }
+    .cards div p {
+       margin: 0;
+    }
+    .cards div img {
+        border: 2px solid black;
+        width: 300px;
+        height: 308px;
+    }
+    .cards {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .why .wrapper h1 {
+        font-size: 19px;
+        padding-bottom: 30px;
+        color: #1B4F30;
+    }
+    .approach {
+      padding-bottom: 50px;
+      display: flex;
+      align-items: start;
+    }
+    .block {
+        row-gap: 5px;
+        border: none;
+        background: none;
+        padding: 0;
+    }
+    .block div {
+        gap: 6px;
+    }
+    .block h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .block div p {
+        font-size: 11px;   
+    }
+    .block div img {
+        width: 11px;
+        height: 10px;
+    }
+    .form {
+      padding-bottom: 58px;
+    }
+    .form__main {
+       row-gap: 15px;
+    }
+    .form__main h3 {
+        font-size: 24px;  
+    }
+    .form__main p {
+        font-size: 10px; 
+    }
+    .form__main input {
+        width: 300px;
+        height: 50px;
+        border: 1px solid #1B4F30;;
+        font-size: 16px;
+    }
+    .form__button {
+        width: 306px;
+        height: 50px;
+        border: 1px solid black;
+    }
+    .form__button a {
+        font-size: 16px; 
+    }
+    .form__content .wrapper img {
+        display: none;
+    }
+    footer {
+        padding: 37px 35px;
+      }
+      .footer_block {
+          column-gap: 65px;
+      }
+      .logo {
+          width: 130px;
+          height: 55px;
+      }
+      .footer__block-first {
+          row-gap: 10px;
+      }
+      .footer_block div p {
+          font-size: 11px;
+      }
+      .footer__block-second {
+          display: none;
+      }
+      .footer__block-third {
+          column-gap: 23px;
+          padding-bottom: 0;
+  }
+  .footer__block-third a img {
+    width: 40px;
+    height: 40px;
+  }
+  }
+  @media (min-width:380px) and (max-width: 786px) {
+    .wrapper {
+        max-width: 696px; 
+        margin: 0 auto;
+    }
+    .header__list {
+        display: none;
+    }
+    .intro {
+        padding-top: 30px;
+        padding-bottom:50px;
+        background-size: cover;
+        background-position: right;
+    }
+    .intro .wrapper {
+        row-gap: 0px;
+    }
+    .intro .wrapper h1 {
+        text-align: center;
+        font-size: 60px;
+        line-height: 55px;
+    }
+    .about {
+        padding-top: 40px;  
+    }
+    .about__info {
+        row-gap: 15px;
+    }
+    .about__info h1 {
+        font-size: 28px;
+    }
+    .about__info p {
+        font-size: 11px;   
+    }
+    .about .wrapper {
+        column-gap: 90px;
+    }
+    .button {
+        width: 178px;
+        height: 30px;  
+    }
+    .button a {
+        font-size: 10px;
+    }
+    .about .wrapper img {
+       width: 300px;
+       height: 300px;
+       object-fit: cover;
+    }
+    .why {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .cards div {
+        row-gap: 5px;
+        font-size: 8px;
+    }
+    .cards div p {
+       margin: 0;
+    }
+    .cards div img {
+        width: 140px;
+        height: 144px;
+    }
+    .cards {
+    gap: 40px;
+    }
+    .why .wrapper h1 {
+        font-size: 23px;
+        padding-bottom: 30px;
+    }
+    .approach {
+      padding-bottom: 50px;
+      display: flex;
+      align-items: start;
+    }
+    .block {
+        row-gap: 5px;
+        padding: 0;
+        background: none;
+        border:  none;
+    }
+    .block div {
+        gap: 6px;
+    }
+    .block h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .block div p {
+        font-size: 15px;   
+    }
+    .block div img {
+        width: 20px;
+        height: 20px;
+    }
+    .form {
+      padding-bottom: 58px;
+    }
+    .form__main {
+       row-gap: 15px;
+    }
+    .form__main h3 {
+        font-size: 24px;  
+    }
+    .form__main p {
+        font-size: 10px; 
+    }
+    .form__main input {
+        width: 300px;
+        height: 50px;
+        border: 1px solid #1B4F30;;
+        font-size: 16px;
+    }
+    .form__button {
+        font-size: 16px;
+        width: 306px;
+        height: 50px;
+        border: 1px solid black;
+    }
+    .form__button a {
+        font-size: 16px;  
+    }
+    .form__content .wrapper img {
+        width: 300px;
+        height: 341px;
+        object-fit: cover;
+    }
+    footer {
+        padding: 37px 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          background: white;
+      }
+      .footer_block {
+          column-gap: 80px;
+          display: flex;
+          justify-content: space-between;
+      }
+      .logo {
+          width: 130px;
+          height:55px;
+      }
+    .footer__block-first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer_block div p a, .footer_block div p {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        color: black;
+    }
+    .footer__block-second {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer__block-third {
+        display: flex;
+        align-items: start;
+    padding-bottom: 60px;
+        column-gap: 36px;
+    }
+    .footer__block-third a img {
+      width: 40px;
+      height: 40px;
+    }
+}
