@@ -273,9 +273,11 @@
         margin-bottom: 20px; 
     }
     .button {
-        font-size: 16px;
         width: 285px;
         height: 57px; 
+    }
+    .button a {
+	font-size: 16px;
     }
     .products {
         padding-top: 60px; 
